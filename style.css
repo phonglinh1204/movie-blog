@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-image: linear-gradient(rgba(54,34,34,0.7),rgba(54,34,34,0.7)), url(https://cdn.pixabay.com/photo/2015/09/02/12/45/movie-918655_1280.jpg);
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.nav-links{
+}
+.nav-links ul{
+    text-align: right;
+}
+.nav-links ul li{
+    display: inline-block;
+    padding: 15px 18px;
+    
+}
+.nav-links ul li a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+.nav-links ul li::after{
+    content: '';
+    display: block;
+    height: 2px;
+    background: #f44336;
+    margin: auto;
+    width: 0%;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    color: antiquewhite;
+    margin-top: 100px;
+}
+
+.content{
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.post{
+    flex-basis: 65%;
+}
+.post h2{
+    color: rgb(63, 45, 45);
+    margin: 30px 0;
+}
+.post img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.post p{
+    color: rgb(107, 68, 68);
+}
+.categories{
+    flex-direction: column;
+    flex-basis: 32%;
+}
+.categories h2{
+    background-color: rgb(107, 68, 68);
+    color: antiquewhite;
+    padding: 7px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.categories div{
+    color: rgb(107, 68, 68);
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.comment{
+    border: 1px solid rosybrown;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment h3{
+    color: rgb(107, 68, 68);
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 15px 0;
+}
+.button{
+    margin: 10px 0;
+    display: inline-block;
+    color: rgb(107, 68, 68);
+    border: 2px solid rosybrown;
+    padding: 12px 34px;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+    transition: 1s;
+}
+.button:hover{
+    background-color: rgb(107, 68, 68);
+    color: antiquewhite;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+}
+.about {
+    flex-basis: 48%;
+    padding: 15px 2px;
+}
+.about img{
+    width: 100%;
+}
+.about h{
+    padding-top: 0;
+    color: rgb(63, 45, 45);
+}
+.about p{
+    padding: 15px 0 10px;
+    color: rgb(107, 68, 68);
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: rgb(107, 68, 68);
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+@media(max-width: 700px){
+    .content{
+        flex-direction: column;
+    }
+    .about-us{
+        flex-direction: column;
+    }
+}
